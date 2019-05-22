@@ -2,7 +2,7 @@
 .contain {
     border-radius : 5 px; 
     width: 800px; 
-    margin : 40px auto; 
+    margin : 0px auto; 
     /* background-color: white;  */
     /* border : 1px solid white;  */
     /* height : 50vh;  */
@@ -214,4 +214,10 @@ text-decoration: none
   text-decoration: none; 
   color : white; 
 
+}
+
+/* s */
+
+.picture_hover :hover{
+/* width: 1000px;  */
 }
