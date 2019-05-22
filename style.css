@@ -11,6 +11,7 @@
   /* float : left */
   /* box-shadow: 0px 10px 10px rgba(0,0,0,0.7); */
   /* cursor: url(./images/wagon.png), auto; */
+  /* height : 500px;  */
 
 }
 /* navbar  */
@@ -24,7 +25,10 @@
 
 }
 
-
+#aboutme{
+  height: 1000px ;
+  overflow: scroll
+}
 
 body > div:nth-child(5) > h2{
   text-decoration: underline
@@ -216,8 +220,6 @@ text-decoration: none
 
 }
 
-/* s */
-
-.picture_hover :hover{
-/* width: 1000px;  */
+.picture_hover{
+  border : 1px solid rgba(0,0,0,0.3)
 }
