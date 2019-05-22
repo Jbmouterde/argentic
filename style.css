@@ -4,16 +4,32 @@
     width: 800px; 
     margin : 0px auto; 
     /* background-color: white;  */
-    /* border : 1px solid white;  */
+    border : 1px solid grey; 
     /* height : 50vh;  */
     text-align : center;
 	padding-bottom : 5px ;
   /* float : left */
-  /* box-shadow: 0px 10px 10px rgba(0,0,0,0.7); */
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
   /* cursor: url(./images/wagon.png), auto; */
   /* height : 500px;  */
 
 }
+
+#aboutme:hover{
+  background-color : rgba(0,0,0,0.2); 
+}
+
+#aboutme::-webkit-scrollbar {
+  width: 1em;
+}
+#aboutme::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#aboutme::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
 /* navbar  */
 .title{
     font-size: 50px;
