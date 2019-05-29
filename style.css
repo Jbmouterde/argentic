@@ -1,3 +1,15 @@
+.all{
+  /* border : 10px solid black ; 
+  display : flex;
+  align-items: center; 
+  justify-content: space-between; 
+  flex-grow: 1; 
+  overflow-x: auto; 
+  overflow: scroll;
+  flex-wrap: nowrap; */
+
+}
+
 
 .contain {
     border-radius : 5 px; 
@@ -41,13 +53,34 @@ border-radius: 20px;
     vertical-align: middle;
 
 }
+.first {
+  text-align : center; 
+}
 
 #aboutme{
-  height: 1000px ;
-  overflow: scroll;
-  overflow-y: overlay; /* Overlaying scrollbar for y axis */
+  height: 400px ;
+  display: flex; 
+  /* overflow: scroll; */
+  overflow-x: auto;
+  align-items: center;
+}
+ #aboutme img{
+  margin-right : 15px
+ }
+
+#friends{
+  height: 400px ; /* change the height to get the normal scrool */
+  display: flex; /* remove to get normal scroll */
+  /* overflow: scroll; */
+  overflow-x: auto; 
+  align-items: center; 
 
 }
+
+#friends img{
+  margin-right : 15px
+ }
+
 
 body > div:nth-child(5) > h2{
   text-decoration: underline
@@ -265,4 +298,5 @@ text-decoration: none
   /* box-shadow: 8px 8px 5px rgba(20, 20, 20, 1);
   border-radius: 15px; */
 }
+
 
