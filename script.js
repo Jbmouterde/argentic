@@ -28,3 +28,16 @@ $(document).ready(function() {
 });
  
 console.log("hello")
+
+
+// img 
+
+function resizeImage(img) {
+    img.style.width = "400px";
+    img.style.height = "660px";
+  }
+
+  function resizeImage2(img) {
+    img.style.width = "660px";
+    img.style.height = "400px";
+  }

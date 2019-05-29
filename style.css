@@ -48,7 +48,7 @@ border-radius: 20px;
 }
 
 #aboutme{
-  height: 400px ;
+  height: 600px ;
   display: flex; 
   /* overflow: scroll; */
   overflow-x: auto;
@@ -86,7 +86,7 @@ body {
     /* background-color: rgba(0,0,0,0.1);  */
   }
 
-
+ 
 
 .container {
 	width: 80%;
