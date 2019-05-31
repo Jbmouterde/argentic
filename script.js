@@ -32,12 +32,20 @@ console.log("hello")
 
 // img 
 
+const INCREASE = true
+const DECREASE = false
+
+let state = INCREASE
+
 function resizeImage(img) {
+    if (state === INCREASE) {
     img.style.width = "400px";
     img.style.height = "660px";
   }
+}
 
   function resizeImage2(img) {
     img.style.width = "660px";
     img.style.height = "400px";
   }
+

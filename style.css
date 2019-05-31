@@ -59,7 +59,7 @@ border-radius: 20px;
  }
 
 #friends{
-  height: 400px ; /* change the height to get the normal scrool */
+  height: 600px ; /* change the height to get the normal scrool */
   display: flex; /* remove to get normal scroll */
   /* overflow: scroll; */
   overflow-x: auto; 
