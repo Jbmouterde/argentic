@@ -23,9 +23,9 @@
 .contain::-webkit-scrollbar {
   width: 1em;
 }
-.contain::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
+/* .contain::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} */
 
 .contain::-webkit-scrollbar-thumb {
 background-color: darkgrey;
@@ -48,7 +48,7 @@ border-radius: 20px;
 }
 
 #aboutme{
-  height: 600px ;
+  height: 400px ;
   display: flex; 
   /* overflow: scroll; */
   overflow-x: auto;
@@ -59,7 +59,7 @@ border-radius: 20px;
  }
 
 #friends{
-  height: 600px ; /* change the height to get the normal scrool */
+  height: 400px ; /* change the height to get the normal scrool */
   display: flex; /* remove to get normal scroll */
   /* overflow: scroll; */
   overflow-x: auto; 
@@ -276,17 +276,17 @@ text-decoration: none
 } */
 
 #scrollPercentLabel {
-  /* font-family: Impact; */
-  /* font-size: 50px;
+  font-family: Impact;
+  font-size: 20px;
   color: #2B2B2B;
   background: rgba(255, 255, 255, 0.5);
   padding: 20px;
-  */
+ 
   top: 50%;
-  left: 80%;
-  position: absolute; 
-  /* box-shadow: 8px 8px 5px rgba(20, 20, 20, 1);
-  border-radius: 15px; */
+  left: 87%;
+  position: fixed; 
+  box-shadow: 8px 8px 5px rgba(20, 20, 20, 1);
+  border-radius: 15px;
 }
 
 

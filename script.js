@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    $('#aboutme').scroll(function(e){
-        var scrollTop = $('#aboutme').scrollTop();
+    $(window).scroll(function(e){
+        var scrollTop = $(document).scrollTop();
         var docHeight = $(document).height();
-        var winHeight = $('#aboutme').height();
+        var winHeight = $(window).height();
         var scrollPercent = (scrollTop) / (docHeight - winHeight);
         var scrollPercentRounded = Math.round(scrollPercent*100);
 
@@ -15,13 +15,13 @@ $(document).ready(function() {
         repositionLabel();
     });
 
-    function repositionLabel() {
-        $('#scrollPercentLabel').css({
-            position:'fixed',
-            left: ($('#aboutme').width() - $('#scrollPercentLabel').outerWidth()) / 2,
-            top: (($('#aboutme').height() - $('#scrollPercentLabel').outerHeight()) / 2) - $('#scrollPercentLabel').height()
-        });
-    }
+    // function repositionLabel() {
+    //     $('#scrollPercentLabel').css({
+    //         position:'fixed',
+    //         left: ($(window).width() - $('#scrollPercentLabel').outerWidth()) / 2,
+    //         top: (($(window).height() - $('#scrollPercentLabel').outerHeight()) / 2) - $('#scrollPercentLabel').height()
+    //     });
+    // }
 
     repositionLabel();
 
@@ -38,14 +38,18 @@ const DECREASE = false
 let state = INCREASE
 
 function resizeImage(img) {
-    if (state === INCREASE) {
     img.style.width = "400px";
     img.style.height = "660px";
-  }
-}
+    $('#aboutme').css({height : '700px'});
+    $('#friends').css({height : '700px'});
+
+    }
+
 
   function resizeImage2(img) {
     img.style.width = "660px";
     img.style.height = "400px";
-  }
+    $('#aboutme').css({height : '700px'});
+    $('#friends').css({height : '700px'});
 
+}
