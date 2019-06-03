@@ -8,12 +8,12 @@ $(document).ready(function() {
         var scrollPercentRounded = Math.round(scrollPercent*100);
 
         $('#scrollPercentLabel>span').html(scrollPercentRounded);
-        repositionLabel();
+        // repositionLabel();
     });
 
-    $(window).resize(function(){
-        repositionLabel();
-    });
+    // $(window).resize(function(){
+    //     repositionLabel();
+    // });
 
     // function repositionLabel() {
     //     $('#scrollPercentLabel').css({
@@ -38,18 +38,46 @@ const DECREASE = false
 let state = INCREASE
 
 function resizeImage(img) {
-    img.style.width = "400px";
-    img.style.height = "660px";
-    $('#aboutme').css({height : '700px'});
-    $('#friends').css({height : '700px'});
+    if(state == INCREASE){
+        img.style.width = "400px";
+        img.style.height = "660px";
+        $('#aboutme').css({height : '700px'});
+        $('#friends').css({height : '700px'});
+        console.log(state)
+        state = DECREASE
+        console.log(state)
+}   
+    else(
+        img.style.width = "200px",
+        img.style.height = "330px",
+        $('#aboutme').css({height : '500px'}),
+        $('#friends').css({height : '700px'}),
+        console.log(state),
+        state = INCREASE
 
+    )
     }
 
 
   function resizeImage2(img) {
-    img.style.width = "660px";
-    img.style.height = "400px";
-    $('#aboutme').css({height : '700px'});
-    $('#friends').css({height : '700px'});
+    if(state == INCREASE){
+        img.style.width = "660px";
+        img.style.height = "400px";
+        $('#aboutme').css({height : '700px'});
+        $('#friends').css({height : '700px'});
+        console.log(state)
+        state = DECREASE
+        console.log(state)
+}   
+    else(
+        img.style.width = "330px",
+        img.style.height = "200px",
+        $('#aboutme').css({height : '500px'}),
+        $('#friends').css({height : '700px'}),
+        console.log(state),
+        state = INCREASE
 
-}
+    )
+    }
+
+
