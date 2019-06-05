@@ -53,8 +53,8 @@ function resizeImage(img) {
         img.style.width = "200px",
         img.style.height = "330px",
         $('#aboutme').css({height : '500px'}),
-        $('#friends').css({height : '700px'}),
-        $('#trip').css({height : '700px'}),
+        $('#friends').css({height : '500px'}),
+        $('#trip').css({height : '500px'}),
 
         console.log(state),
         state = INCREASE
@@ -69,6 +69,8 @@ function resizeImage(img) {
         img.style.height = "400px";
         $('#aboutme').css({height : '700px'});
         $('#friends').css({height : '700px'});
+        $('#trip').css({height : '700px'});
+
         console.log(state)
         state = DECREASE
         console.log(state)
@@ -78,6 +80,8 @@ function resizeImage(img) {
         img.style.height = "200px",
         $('#aboutme').css({height : '500px'}),
         $('#friends').css({height : '700px'}),
+        $('#trip').css({height : '500px'}),
+
         console.log(state),
         state = INCREASE
 
