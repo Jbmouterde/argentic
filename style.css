@@ -33,6 +33,21 @@ outline: 1px solid red;
 border-radius: 20px;
 }
 
+
+/* trip */
+#trip{
+height: 400px ;
+display: flex; 
+/* overflow: scroll; */
+overflow-x: auto;
+align-items: center;
+}
+#trip img{
+
+
+margin-right : 15px
+}
+
 /* navbar  */
 .title{
     font-size: 50px;
