@@ -43,6 +43,8 @@ function resizeImage(img) {
         img.style.height = "660px";
         $('#aboutme').css({height : '700px'});
         $('#friends').css({height : '700px'});
+        $('#trip').css({height : '700px'});
+
         console.log(state)
         state = DECREASE
         console.log(state)
@@ -52,6 +54,8 @@ function resizeImage(img) {
         img.style.height = "330px",
         $('#aboutme').css({height : '500px'}),
         $('#friends').css({height : '700px'}),
+        $('#trip').css({height : '700px'}),
+
         console.log(state),
         state = INCREASE
 
