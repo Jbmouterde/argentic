@@ -70,7 +70,6 @@ function resizeImage(img) {
         $('#aboutme').css({height : '700px'});
         $('#friends').css({height : '700px'});
         $('#trip').css({height : '700px'});
-
         console.log(state)
         state = DECREASE
         console.log(state)
@@ -89,3 +88,14 @@ function resizeImage(img) {
     }
 
 
+
+    $("body > header > div > nav > ul > li:nth-child(1) > a").click(function(){
+        window.location.href = "index.html"
+        // $("body > div.instructions.cache1").slideToggle(1500);
+      });
+
+
+      $("body > header > div > nav > ul > li:nth-child(2) > a").click(function(){
+        window.location.href = "index2.html"
+        // $("body > div.instructions.cache1").slideToggle(1500);
+      });
