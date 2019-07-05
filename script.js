@@ -95,16 +95,5 @@ function resizeImage(img) {
       });
 
 
-      $("body > div.all > div > button:nth-child(3) > a").click(function(){
-        window.location.href = "index.html"
-      });
-
-      $("body > div.all > div > button:nth-child(4) > a").click(function(){
-        window.location.href = "index2.html"
-      });
-
-
-      $("body > div.all > div > button:nth-child(5) > a").click(function(){
-        window.location.href = "index3.html"
-      });
+    
      
